@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <label for="idk"></label>
+        <input
+          type="text"
+          name="input"
+          id="idk"
+          placeholder="taskin adini yazin"
+        />
+        <label for="date"></label>
+        <input type="date" name="datetime" id="date" />
+        <div class="button">
+          <button type="button" class="btn" onclick="addTask()">
+            Əlavə et
+          </button>
+          <button type="button" class="btn" onclick="sortTasks('asc')">
+            A-Z Sirala
+          </button>
+          <button type="button" class="btn" onclick="sortTasks('desc')">
+            Z-A sirala
+          </button>
+          <button type="button" class="btn" onclick="sortTasks('date')">
+            Tarixe gore
+          </button>
+        </div>
+      </section>
+      <section id="taskList"></section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
